@@ -32,12 +32,10 @@ Sub ModifyEmbeddedTextFile()
     """", vbNormalFocus)
   
   ' Get the embedded object opened
-  ' Note: this will create a temporary file with
+  ' Note: this will use the temporary file with
   ' the content of the embedded object
   ' the path of which will be passed to the editor
   ' program
-  ' This call will return once the editor program
-  ' is closed
   Call obj.Activate(kShowOLEVerb, Nothing)
   
   ' Unregister our editor for text files
